@@ -1,0 +1,27 @@
+cd ~/,ssh
+
+#帳號連local
+ssh-keygen -o
+
+cat ~/.ssh/id_rsa.pub
+
+clip < ~/.ssh/id_rsa.pub
+
+###貼帳號
+
+#local連帳號
+git config --global user.email "github註冊帳號"
+git config --global user.name "github用戶名"
+
+
+#github開空repo copy起始指令
+ echo "# ahyes_000" >> README.md
+git add README.md
+git commit -m "first commit"
+git remote add origin git@github.com:jjaammiieehh00/ahyes_000.git
+git push -u origin master
+
+#更新repo
+git add 新增之檔案
+git commit -m "註記內容"
+git push origin master
